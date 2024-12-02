@@ -1,5 +1,6 @@
 import React from "react";
-import HeroImage from "../assets/hero-image.png";
+import HeroImage from "../assets/profile-pic-3.png";
+import ResumeFile from "../assets/ResumeFile.pdf";
 
 function Hero() {
   return (
@@ -21,18 +22,23 @@ function Hero() {
         I specialize in building modern and responsive web applications.
       </p>
       <div className="mt-8 space-x-4">
-        <button
+        {/* Get In Touch Button */}
+        <a
+          href="#contact" // Navigate to the contact form section
           className="bg-gradient-to-r from-green-400 to-blue-500 text-white
                 transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full"
         >
           <i className="fas fa-envelope mr-2"></i> Get In Touch With Me
-        </button>
-        <button
+        </a>
+        {/* Resume Button */}
+        <a
+          href={ResumeFile} // Link to resume file
+          download="Mohammad_Abi_Resume.pdf" // Set download filename
           className="bg-gradient-to-r from-pink-500 to-yellow-500 text-white
                 transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full"
         >
           Resume
-        </button>
+        </a>
       </div>
     </div>
   );
