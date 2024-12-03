@@ -4,34 +4,40 @@ const services = [
   {
     id: 1,
     title: "Web Design",
-    description: "Creating visually appealing and user-friendly web designs.",
+    description: "Designing clean, accessible, and user-friendly websites.",
   },
   {
     id: 2,
     title: "Frontend Development",
-    description: "Building responsive and interactive user interfaces.",
+    description:
+      "Creating responsive, interactive, and dynamic user interfaces with modern web technologies.",
   },
   {
     id: 3,
-    title: "Backend Development",
-    description: "Developing robust server-side logic and databases.",
+    title: "JavaScript Development",
+    description:
+      "Building interactive web applications using JavaScript frameworks like React.",
   },
   {
     id: 4,
-    title: "Full-Stack Development",
-    description: "Combining both frontend and backend development skills.",
+    title: "CSS & HTML",
+    description:
+      "Crafting well-structured, semantic, and visually appealing websites with HTML5 and CSS3.",
   },
   {
     id: 5,
-    title: "Content Writing",
-    description: "Writing content for your business and companies.",
+    title: "Responsive Design",
+    description:
+      "Ensuring websites look great and function properly across devices, from desktops to mobile phones.",
   },
   {
     id: 6,
-    title: "Digital Marketing",
-    description: "Promote your business with our digital marketing team.",
+    title: "Website Maintenance",
+    description:
+      "Providing ongoing support and improvements for websites to keep them up to date.",
   },
 ];
+
 const Service = () => {
   return (
     <div className="bg-black text-white py-20" id="service">
