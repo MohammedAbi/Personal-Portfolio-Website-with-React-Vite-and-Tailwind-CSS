@@ -18,14 +18,13 @@ function About() {
               front-end development, focusing on creating modern, responsive web
               applications. <br />
               <br />
-              As a humble student, I’m continuously learning how
-              to blend both technical and design skills to build seamless user
-              experiences. My journey through the Noroff Front-End Development
-              course has equipped me with a solid foundation in web design,
-              HTML, CSS, JavaScript, and various frameworks. <br />
-              I'm passionate
-              about working in teams to create interactive solutions that meet
-              both aesthetic and functional needs.
+              As a humble student, I’m continuously learning how to blend both
+              technical and design skills to build seamless user experiences. My
+              journey through the Noroff Front-End Development course has
+              equipped me with a solid foundation in web design, HTML, CSS,
+              JavaScript, and various frameworks. <br />
+              I'm passionate about working in teams to create interactive
+              solutions that meet both aesthetic and functional needs.
             </p>
             <div className="space-y-4">
               <div className="flex items-center">
