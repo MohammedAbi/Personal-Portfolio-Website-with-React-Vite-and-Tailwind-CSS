@@ -96,7 +96,7 @@ function Navbar() {
                 Projects
               </a>
               <button
-                className="bg-gradient-to-r from-blue-400 to-green-500 text-white mt-4 px-6 py-2 rounded-full"
+                className="bg-gradient-to-r from-blue-400 to-blue-900 text-white mt-4 px-6 py-2 rounded-full"
                 onClick={toggleMenu}
               >
                 <a href="#contact" className="hover:text-gray-400">

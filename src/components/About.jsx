@@ -26,7 +26,7 @@ function About() {
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
+                    className="bg-gradient-to-r  from-sky-500 to-indigo-500 h-2.5 rounded-full 
                         transform transition-transform duration-300 hover:scale-105 w-11/12"
                   ></div>
                 </div>
@@ -37,7 +37,7 @@ function About() {
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
+                    className="bg-gradient-to-r  from-sky-500 to-indigo-500 h-2.5 rounded-full 
                         transform transition-transform duration-300 hover:scale-105 w-11/12"
                   ></div>
                 </div>
@@ -48,7 +48,7 @@ function About() {
                 </label>
                 <div className="grow bg-gray-800 rounded-full h-2.5">
                   <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
+                    className="bg-gradient-to-r  from-sky-500 to-indigo-500 h-2.5 rounded-full 
                         transform transition-transform duration-300 hover:scale-105 w-10/12"
                   ></div>
                 </div>
@@ -58,7 +58,7 @@ function About() {
               <div>
                 <h3
                   className="text-2xl font-bold text-transparent bg-clip-text 
-                    bg-gradient-to-r from-green-400 to-blue-500"
+                    bg-gradient-to-r  from-sky-400 to-indigo-400"
                 >
                   3+
                 </h3>
@@ -67,7 +67,7 @@ function About() {
               <div>
                 <h3
                   className="text-2xl font-bold text-transparent bg-clip-text 
-                    bg-gradient-to-r from-green-400 to-blue-500"
+                    bg-gradient-to-r from-sky-400 to-indigo-400"
                 >
                   25+
                 </h3>
@@ -76,7 +76,7 @@ function About() {
               <div>
                 <h3
                   className="text-2xl font-bold text-transparent bg-clip-text 
-                    bg-gradient-to-r from-green-400 to-blue-500"
+                    bg-gradient-to-r from-sky-400 to-indigo-400"
                 >
                   10+
                 </h3>

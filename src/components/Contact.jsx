@@ -10,7 +10,7 @@ const Contact = () => {
           <div className="flex-1 mb-8 md:mb-0">
             <h3
               className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r 
-            from-green-400 to-blue-500 mb-4"
+            from-sky-400 to-indigo-400 mb-4"
             >
               Let's Talk
             </h3>
@@ -19,7 +19,7 @@ const Contact = () => {
               opportunities.
             </p>
             <div className="mb-4 mt-8">
-              <FaEnvelope className="inline-block text-green-400 mr-2" />
+              <FaEnvelope className="inline-block text-sky-400 mr-2" />
               <a
                 href="mailto:mohammedabdulabi@gmail.com?subject=Inquiry&body=Hi Mohammed, I would like to discuss..."
                 className="hover:underline"
@@ -28,11 +28,11 @@ const Contact = () => {
               </a>
             </div>
             <div className="mb-4">
-              <FaPhone className="inline-block text-green-400 mr-2" />
+              <FaPhone className="inline-block text-sky-400 mr-2" />
               <span>+0047 45845550</span>
             </div>
             <div className="mb-4">
-              <FaMapMarkedAlt className="inline-block text-green-400 mr-2" />
+              <FaMapMarkedAlt className="inline-block text-sky-400 mr-2" />
               <span>Sigrids vei 32, Kristiansand, Norge</span>
             </div>
           </div>
@@ -82,7 +82,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="bg-gradient-to-r from-green-400 to-blue-500 text-white
+                className="bg-gradient-to-r from-sky-500 to-indigo-500 text-white
             transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full"
               >
                 Send
