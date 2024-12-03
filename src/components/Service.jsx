@@ -63,12 +63,12 @@ const Service = () => {
                 {service.title}
               </h3>
               <p className="mt-2 text-gray-300">{service.description}</p>
-              <a
+              {/* <a
                 href="#"
                 className="mt-4 inline-block text-sky-400 hover:text-blue-500"
               >
                 Read More
-              </a>
+              </a> */}
             </div>
           ))}
         </div>
