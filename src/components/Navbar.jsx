@@ -86,12 +86,6 @@ function Navbar() {
           >
             Projects
           </a>
-          <a
-            href="#contact"
-            className="hover:text-sky-400 transition-colors duration-300"
-          >
-            Contact
-          </a>
         </div>
 
         {/* Call-to-Action Button */}
