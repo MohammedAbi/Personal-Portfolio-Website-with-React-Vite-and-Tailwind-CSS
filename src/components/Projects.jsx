@@ -2,6 +2,11 @@ import React from "react";
 import imgP1 from "../assets/image-p1.png";
 import imgP2 from "../assets/image-p2.png";
 import imgP3 from "../assets/image-p3.png";
+import imgP4 from "../assets/image-p4.png";
+import imgP5 from "../assets/image-p5.png";
+import imgP6 from "../assets/image-p6.png";
+import imgP7 from "../assets/image-p7.png";
+import imgP8 from "../assets/image-p8.png";
 
 const projects = [
   {
@@ -29,6 +34,48 @@ const projects = [
     github:
       "https://github.com/NoroffFEU/FED1-PE1-MohammedAbi?tab=readme-ov-file",
     liveDemo: "https://echopost.netlify.app/",
+  },
+  {
+    id: 4,
+    name: "Currency Converter App",
+    technologies: "React, Tailwind CSS, API",
+    image: imgP4,
+    github:
+      "https://github.com/MohammedAbi/Currency-Converter-with-React-JS-and-Tailwind-CSS",
+    liveDemo: "https://currency-converter-application-cca.netlify.app/",
+  },
+  {
+    id: 5,
+    name: "Travel Agency Website",
+    technologies: "REACT, Vite, Tailwind CSS, Express-based API server",
+    image: imgP5,
+    github: "https://github.com/MohammedAbi/Travel-Agency-full-stack",
+    liveDemo: "https://travel-agency-full-stack-am.netlify.app/",
+  },
+  {
+    id: 6,
+    name: "Weather App - React & Tailwind CSS",
+    technologies: "REACT, Vite, Tailwind CSS, Fetch API",
+    image: imgP6,
+    github:
+      "https://github.com/MohammedAbi/Weather-app-react-tailwind?tab=readme-ov-file",
+    liveDemo: "https://weather-app-react-tailwind-es6.netlify.app/",
+  },
+  {
+    id: 7,
+    name: "Social Media Application",
+    technologies: "JavaScript, Tailwind CSS, Vite, Vitest, fetch API",
+    image: imgP7,
+    github: "https://github.com/MohammedAbi/css-framework?tab=readme-ov-file",
+    liveDemo: "https://sma-social-media-application-2.netlify.app/",
+  },
+  {
+    id: 8,
+    name: "Flow State Todo App",
+    technologies: "HTML CSS Javascript",
+    image: imgP8,
+    github: "https://github.com/MohammedAbi/Flow-State-Todo-App",
+    liveDemo: "https://flow-state-todo-app.netlify.app/",
   },
 ];
 
