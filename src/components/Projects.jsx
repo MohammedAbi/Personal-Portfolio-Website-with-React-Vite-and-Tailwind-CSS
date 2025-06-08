@@ -7,6 +7,7 @@ import imgP5 from "../assets/image-p5.png";
 import imgP6 from "../assets/image-p6.png";
 import imgP7 from "../assets/image-p7.png";
 import imgP8 from "../assets/image-p8.png";
+import imgP9 from "../assets/image-p9.png";
 
 const projects = [
   {
@@ -76,6 +77,14 @@ const projects = [
     image: imgP8,
     github: "https://github.com/MohammedAbi/Flow-State-Todo-App",
     liveDemo: "https://flow-state-todo-app.netlify.app/",
+  },
+  {
+    id: 9,
+    name: "VivaTrend Store",
+    technologies: "React, Tailwind CSS, API",
+    image: imgP9,
+    github: "https://github.com/MohammedAbi/vivatrend-store",
+    liveDemo: "https://vivatrend-store.netlify.app/",
   },
 ];
 
