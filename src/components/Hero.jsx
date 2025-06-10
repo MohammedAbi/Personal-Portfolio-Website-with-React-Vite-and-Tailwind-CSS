@@ -40,14 +40,14 @@ function Hero() {
           Get In Touch
         </a>
         {/* Resume Button */}
-        <a
+        {/* <a
           href={ResumeFile}
           download="Mohammad_Abi_Resume.pdf"
           className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-6 py-3 rounded-full 
             shadow-lg transform transition-transform duration-300 hover:scale-110 hover:shadow-xl"
         >
           Download Resume
-        </a>
+        </a> */}
       </div>
     </div>
   );
