@@ -67,7 +67,7 @@ const Contact = () => {
             </div>
             <div className="mb-4">
               <FaMapMarkedAlt className="inline-block text-sky-400 mr-2" />
-              <span>Sigrids vei 32, Kristiansand, Norge</span>
+              <span>Niels Juels gate 87, 4008 Stavanger</span>
             </div>
           </div>
 
