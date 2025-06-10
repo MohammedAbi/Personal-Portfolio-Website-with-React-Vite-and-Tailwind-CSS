@@ -72,7 +72,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="flex-1 w-full">
+          {/* <div className="flex-1 w-full">
             <form ref={form} onSubmit={sendEmail} className="space-y-4">
               <div>
                 <label htmlFor="name" className="block mb-2">
@@ -127,7 +127,7 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* Toast Notification Container */}
