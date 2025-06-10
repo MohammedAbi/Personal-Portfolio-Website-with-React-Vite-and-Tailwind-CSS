@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { FaEnvelope, FaMapMarkedAlt, FaPhone } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
@@ -45,7 +45,7 @@ const Contact = () => {
               className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r 
               from-sky-400 to-indigo-400 mb-4"
             >
-              Let's Connect
+              Let&apos;s Connect
             </h3>
             <p>
               Whether you have a question, an opportunity, or just want to say

@@ -1,4 +1,3 @@
-import React from "react";
 import HeroImage from "../assets/profile-pic-3.png";
 import ResumeFile from "../assets/ResumeFile.pdf";
 
@@ -18,7 +17,7 @@ function Hero() {
 
       {/* Heading */}
       <h1 className="text-5xl font-extrabold text-center">
-        Hi, I'm{" "}
+        Hi, I&apos;m{" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500">
           Mohammad Abi
         </span>

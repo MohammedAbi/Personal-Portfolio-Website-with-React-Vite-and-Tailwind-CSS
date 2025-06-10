@@ -1,4 +1,3 @@
-import React from "react";
 import AboutImage from "../assets/hero-image-1.png";
 
 function About() {
@@ -17,16 +16,16 @@ function About() {
           />
           <div className="flex-1">
             <p className="text-lg mb-8">
-              I’m currently navigating my way through the exciting world of
+              I&apos;m currently navigating my way through the exciting world of
               front-end development, focusing on creating modern, responsive web
               applications. <br />
               <br />
-              As a humble student, I’m continuously learning how to blend both
-              technical and design skills to build seamless user experiences. My
-              journey through the Noroff Front-End Development course has
-              equipped me with a solid foundation in web design, HTML, CSS,
-              JavaScript, and various frameworks. <br />
-              I'm passionate about working in teams to create interactive
+              As a humble student, I&apos;m continuously learning how to blend
+              both technical and design skills to build seamless user
+              experiences. My journey through the Noroff Front-End Development
+              course has equipped me with a solid foundation in web design,
+              HTML, CSS, JavaScript, and various frameworks. <br />
+              I&apos;m passionate about working in teams to create interactive
               solutions that meet both aesthetic and functional needs.
             </p>
             <div className="space-y-4">
