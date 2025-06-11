@@ -1,3 +1,6 @@
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
+
 import imgP1 from "../assets/image-p1.png";
 import imgP2 from "../assets/image-p2.png";
 import imgP3 from "../assets/image-p3.png";
@@ -89,50 +92,42 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div
-      className="bg-gradient-to-b from-indigo-900 via-sky-900 to-black text-white py-20 mt-[-10px]"
-      id="project"
-    >
+    <div className="bg-gray-900 text-gray-100 py-20 mt-[-10px]" id="project">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <article
               key={project.id}
-              className="bg-gray-800 p-6 rounded-lg hover:shadow-lg 
-                transform transition-transform duration-300 hover:scale-105"
+              className="bg-gray-800 p-6 rounded-lg hover:shadow-lg transform transition-transform duration-300 hover:scale-105"
             >
               <img
                 src={project.image}
                 alt={`Screenshot of the ${project.name} project`}
                 className="rounded-lg mb-4 w-full h-48 object-cover"
               />
-              <h3 className="text-2xl font-bold mb-2 truncate">
+              <h3 className="text-2xl font-bold mb-2 text-indigo-300 truncate">
                 {project.name}
               </h3>
               <p className="text-gray-400 mb-4 truncate">
                 {project.technologies}
               </p>
-              <div className="flex justify-around">
+              <div className="flex flex-col sm:flex-row gap-3 mt-4">
                 <a
                   href={project.github}
-                  className="inline-block mx-auto bg-gradient-to-r 
-                    from-sky-500 to-indigo-500 text-white px-4 py-2 m-2 text-center rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 hover:brightness-125"
+                  className="flex items-center justify-center gap-2 flex-1 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-full text-center shadow-md hover:shadow-lg transition-all duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GitHub
+                  <FaGithub /> GitHub
                 </a>
                 <a
                   href={project.liveDemo}
-                  className="inline-block mx-auto bg-gradient-to-r 
-                    from-sky-500 to-indigo-500 text-white px-4 py-2 m-2 text-center rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 hover:brightness-125"
+                  className="flex items-center justify-center gap-2 flex-1 bg-sky-600 hover:bg-sky-500 text-white px-4 py-2 rounded-full text-center shadow-md hover:shadow-lg transition-all duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Live Demo
+                  <FiExternalLink /> Live Demo
                 </a>
               </div>
             </article>

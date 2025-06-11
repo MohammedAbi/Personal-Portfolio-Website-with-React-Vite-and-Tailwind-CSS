@@ -5,20 +5,17 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Toggle menu
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
 
-  // Manage body scroll when menu is open
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
     return () => {
-      document.body.style.overflow = "auto"; // Restore scrolling on unmount
+      document.body.style.overflow = "auto";
     };
   }, [menuOpen]);
 
-  // Close menu on window resize for larger screens
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768 && menuOpen) {
@@ -31,10 +28,9 @@ function Navbar() {
     };
   }, [menuOpen]);
 
-  // Add scroll effect to shrink navbar
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50); // Shrink navbar after 50px scroll
+      setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -45,14 +41,14 @@ function Navbar() {
   return (
     <nav
       className={`${
-        scrolled ? "py-2 bg-opacity-100 shadow-lg" : "py-4"
-      } bg-black text-white fixed top-0 w-full z-50 transition-all duration-300`}
+        scrolled ? "py-8 bg-opacity-100 shadow-lg" : "py-6"
+      } bg-gray-900 text-gray-100 fixed top-0 w-full z-50 transition-all duration-300`}
     >
       <div className="container mx-auto px-8 md:px-16 lg:px-24 flex justify-between items-center">
         {/* Logo */}
         <a
           href="#hero"
-          className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500"
+          className="text-xl font-extrabold text-transparent bg-clip-text bg-white"
         >
           Mohammed A.
         </a>
@@ -67,63 +63,62 @@ function Navbar() {
         </button>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex space-x-8 font-medium">
+        <div className="hidden md:flex space-x-8 font-medium text-2xl">
           <a
             href="#about"
-            className="hover:text-sky-400 transition-colors duration-300"
+            className="hover:text-indigo-400 transition-colors duration-300"
           >
             About
           </a>
           <a
             href="#service"
-            className="hover:text-sky-400 transition-colors duration-300"
+            className="hover:text-indigo-400 transition-colors duration-300"
           >
             Services
           </a>
           <a
             href="#project"
-            className="hover:text-sky-400 transition-colors duration-300"
+            className="hover:text-indigo-400 transition-colors duration-300"
           >
             Projects
           </a>
         </div>
 
-        {/* Call-to-Action Button */}
+        {/* Call-to-Action Button - Desktop */}
         <a
           href="#contact"
-          className="hidden md:inline bg-gradient-to-r from-sky-500 to-indigo-500 text-white px-6 py-2 rounded-full 
-            shadow-lg transform transition-transform duration-300 hover:scale-110"
+          className="hidden md:inline bg-indigo-600 text-white text-2xl px-6 py-2 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300"
         >
           Contact
         </a>
 
         {/* Mobile Full-Screen Menu */}
         {menuOpen && (
-          <div className="fixed inset-0 bg-black bg-opacity-95 z-40 flex flex-col items-center justify-center space-y-8 text-2xl">
+          <div className="fixed inset-0 bg-gray-900 bg-opacity-95 z-40 flex flex-col items-center justify-center space-y-8 text-2xl">
             <a
               href="#about"
-              className="hover:text-sky-400"
+              className="hover:text-indigo-400"
               onClick={toggleMenu}
             >
               About Me
             </a>
             <a
               href="#service"
-              className="hover:text-sky-400"
+              className="hover:text-indigo-400"
               onClick={toggleMenu}
             >
               Services
             </a>
             <a
               href="#project"
-              className="hover:text-sky-400"
+              className="hover:text-indigo-400"
               onClick={toggleMenu}
             >
               Projects
             </a>
             <a
               href="#contact"
-              className="bg-gradient-to-r from-sky-500 to-indigo-500 text-white px-6 py-2 rounded-full shadow-lg"
+              className="bg-indigo-600 text-white px-6 py-2 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300"
               onClick={toggleMenu}
             >
               Contact

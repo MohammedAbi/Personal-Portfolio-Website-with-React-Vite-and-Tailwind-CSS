@@ -1,101 +1,66 @@
-import AboutImage from "../assets/hero-image-1.png";
-
 function About() {
+  const skills = [
+    { label: "HTML & CSS", level: "w-11/12" },
+    { label: "JavaScript", level: "w-11/12" },
+    { label: "TypeScript", level: "w-10/12" },
+    { label: "React JS", level: "w-10/12" },
+    { label: "Node JS", level: "w-10/12" },
+    { label: "Tailwind CSS", level: "w-9/12" },
+    { label: "Git & GitHub", level: "w-9/12" },
+    { label: "REST APIs", level: "w-9/12" },
+  ];
+
+  const stats = [
+    { number: "3+", label: "Years of Learning" },
+    { number: "20+", label: "Projects Completed" },
+    { number: "10+", label: "Team Experiences" },
+  ];
+
   return (
-    <div
-      className="bg-gradient-to-b from-indigo-900 via-sky-900 to-black text-white py-20"
-      id="about"
-    >
+    <section id="about" className="bg-gray-900 text-gray-100 py-20">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
-        <div className="flex flex-col md:flex-row items-center md:space-x-12 md:items-start">
-          <img
-            src={AboutImage}
-            alt="About me"
-            className="w-80 h-80 rounded object-cover mb-8 md:mb-0"
-          />
-          <div className="flex-1">
-            <p className="text-lg mb-8">
-              I&apos;m currently navigating my way through the exciting world of
-              front-end development, focusing on creating modern, responsive web
-              applications. <br />
-              <br />
-              As a humble student, I&apos;m continuously learning how to blend
-              both technical and design skills to build seamless user
-              experiences. My journey through the Noroff Front-End Development
-              course has equipped me with a solid foundation in web design,
-              HTML, CSS, JavaScript, and various frameworks. <br />
-              I&apos;m passionate about working in teams to create interactive
-              solutions that meet both aesthetic and functional needs.
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  HTML & CSS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
+        <h2 className="text-4xl font-bold text-center mb-12 tracking-wide">
+          About Me
+        </h2>
+
+        <div className="max-w-3xl mx-auto space-y-8">
+          <p className="text-lg leading-relaxed text-gray-300">
+            I enjoy creating clean, responsive websites using modern tools and
+            frameworks. My training gave me a strong foundation in HTML, CSS,
+            JavaScript, and React. I focus on building user-friendly, accessible
+            web applications that provide seamless experiences.
+          </p>
+          <p className="text-lg leading-relaxed text-gray-300">
+            I’m motivated by continuous learning and excited to contribute to
+            collaborative teams that value creativity and growth.
+          </p>
+
+          {/* Skills */}
+          <div className="space-y-5">
+            {skills.map(({ label, level }) => (
+              <div key={label} className="flex items-center gap-4">
+                <span className="w-32 font-medium text-gray-300">{label}</span>
+                <div className="flex-1 bg-gray-800 rounded-full h-3 overflow-hidden">
                   <div
-                    className="bg-gradient-to-r  from-sky-500 to-indigo-500 h-2.5 rounded-full 
-                        transform transition-transform duration-300 hover:scale-105 w-11/12"
+                    className={`bg-gray-600 h-3 rounded-full transition-transform duration-300 hover:scale-x-105 ${level}`}
                   ></div>
                 </div>
               </div>
-              <div className="flex items-center">
-                <label htmlFor="reactjs" className="w-2/12">
-                  React JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r  from-sky-500 to-indigo-500 h-2.5 rounded-full 
-                        transform transition-transform duration-300 hover:scale-105 w-10/12"
-                  ></div>
-                </div>
+            ))}
+          </div>
+
+          {/* Stats */}
+          <div className="mt-12 flex justify-around text-center text-gray-300">
+            {stats.map(({ number, label }) => (
+              <div key={label} className="space-y-1">
+                <h3 className="text-3xl font-bold">{number}</h3>
+                <p className="uppercase text-sm tracking-wider">{label}</p>
               </div>
-              <div className="flex items-center">
-                <label htmlFor="nodejs" className="w-2/12">
-                  Node JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r  from-sky-500 to-indigo-500 h-2.5 rounded-full 
-                        transform transition-transform duration-300 hover:scale-105 w-10/12"
-                  ></div>
-                </div>
-              </div>
-            </div>
-            <div className="mt-12 flex justify-between text-center">
-              <div>
-                <h3
-                  className="text-2xl font-bold text-transparent bg-clip-text 
-                    bg-gradient-to-r  from-sky-400 to-indigo-400"
-                >
-                  3+
-                </h3>
-                <p>Years of Learning</p>
-              </div>
-              <div>
-                <h3
-                  className="text-2xl font-bold text-transparent bg-clip-text 
-                    bg-gradient-to-r from-sky-400 to-indigo-400"
-                >
-                  20+
-                </h3>
-                <p>Projects Completed</p>
-              </div>
-              <div>
-                <h3
-                  className="text-2xl font-bold text-transparent bg-clip-text 
-                    bg-gradient-to-r from-sky-400 to-indigo-400"
-                >
-                  10+
-                </h3>
-                <p>Collaborative Experiences</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
